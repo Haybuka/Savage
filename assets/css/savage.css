@@ -79,15 +79,13 @@ h3 {
 ========================================================================================== */
 
 header {
-	padding-left: 2rem;
-	padding-right: 2rem;
 	background: var(--secondary-color);
 	font-weight: 600;
 	font-size: 18px;
 }
 
 header nav .current {
-	border-bottom: 2px solid var(--base-color);
+	border-bottom: 2px solid #fff;
 }
 
 header nav .btn {
@@ -108,8 +106,8 @@ header nav .nav-item {
 }
 
 header .btn-outline {
-	border: 2px solid var(--primary-color) !important;
-	color: var(--primary-color) !important;
+	border: 2px solid #fff;
+	color: #fff;
 }
 
 small,
@@ -141,10 +139,13 @@ p {
 }
 
 button:hover {
-	background-color: var(--primary-color);
-	color: #fff !important;
+	background-color: #fff;
+	color: var(--primary-color) !important;
 }
-
+.claimBtn button {
+	background-color: #fff;
+	color: var(--primary-color);
+}
 .claimBtn button:hover {
 	background-color: var(--primary-color);
 	color: #fff !important;
@@ -196,7 +197,6 @@ button:hover {
                                           Footer
 ========================================================================================== */
 
-
 footer p {
 	color: #fff;
 	opacity: 0.9;
@@ -230,7 +230,6 @@ footer p {
 
 	.imageDiv p {
 		font-size: 16px;
-
 	}
 
 	@media (max-width: 768px) {
@@ -252,3 +251,4 @@ footer p {
 			padding-right: 1.5rem !important;
 		}
 	}
+}
