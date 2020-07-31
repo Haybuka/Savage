@@ -11,16 +11,42 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* ==========================================================================================
+                                      Style Table
+========================================================================================== */
+
+/*
+1.0 body
+	1.1 Miscealleaneous (spelt wrongly of course,lol)
+		header Styles
+		Small and Paragraph
+	1.2 Utilities
+2.0 Header
+	2.1 Header nav
+	2.2 Header button
+3.0 MainPage section (Grid Layout)
+	3.1 Image div (Grid Item)
+	3.2 Point section (Grid Item)
+		3.2.1 TopProgress (Grid Layout)
+			  3.2.1.1 First Grid Item
+			  3.2.1.2 Second Grid Item
+			  3.2.1.3 Third Grid Item
+	3.3 Claim Button (Grid Item)
+		3.3.1 Button
+		3.3.2 Button Outline
+		3.3.3 Button Hover
+4.0 Footer
+5.0 Responsive Layout
+*/
+/* ==========================================================================================
+                                       1.0  Body
+========================================================================================== */
 
 body {
 	font-family: var(--font-stack);
 	color: #000;
 	font-size: 24px;
 	overflow-x: hidden;
-}
-
-a:hover {
-	text-decoration: none;
 }
 
 h1,
@@ -44,6 +70,11 @@ h2 {
 
 h3 {
 	font-size: 32px;
+}
+
+small,
+p {
+	color: var(--primary-color) !important;
 }
 
 /* ==========================================================================================
@@ -77,7 +108,7 @@ h3 {
 /* ==========================================================================================
                                           Header
 ========================================================================================== */
-
+/*2.0   Header Styles */
 header {
 	background: var(--secondary-color);
 	font-weight: 600;
@@ -109,11 +140,9 @@ header .btn-outline {
 	border: 2px solid #fff;
 	color: #fff;
 }
-
-small,
-p {
-	color: var(--primary-color) !important;
-}
+/* ==========================================================================================
+                                       3.0   Main Page Section
+========================================================================================== */
 
 .mainpage {
 	display: grid;
@@ -127,42 +156,13 @@ p {
 	grid-row: 1/2;
 	text-align: center;
 }
+.imageDiv img {
+	border-radius: 50%;
+}
 
 .points {
 	grid-column: 1/13;
 	grid-row: 2/3;
-}
-
-.claimBtn {
-	grid-column: 1/13;
-	grid-row: 3/4;
-}
-
-button:hover {
-	background-color: #fff;
-	color: var(--primary-color) !important;
-}
-.claimBtn button {
-	background-color: #fff;
-	color: var(--primary-color);
-}
-.claimBtn button:hover {
-	background-color: var(--primary-color);
-	color: #fff !important;
-}
-
-.claimBtn .btn-outline {
-	border: 2px solid var(--primary-color) !important;
-	color: var(--primary-color) !important;
-	margin-top: 3%;
-	margin-bottom: 3%;
-	padding: 0.5rem 1.5rem;
-}
-
-.imageDiv img {
-	border-radius: 50%;
-	/* width: 100%;
-	height: 100%; */
 }
 
 .topProgress {
@@ -193,8 +193,33 @@ button:hover {
 	border-radius: 10px;
 }
 
+.claimBtn {
+	grid-column: 1/13;
+	grid-row: 3/4;
+}
+
+.claimBtn button {
+	background-color: #fff;
+	color: var(--primary-color);
+}
+.claimBtn .btn-outline {
+	border: 2px solid var(--primary-color) !important;
+	color: var(--primary-color) !important;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	padding: 0.5rem 1.5rem;
+}
+
+.claimBtn button:hover {
+	background-color: var(--primary-color);
+	color: #fff !important;
+}
+button:hover {
+	background-color: #fff;
+	color: var(--primary-color) !important;
+}
 /* ==========================================================================================
-                                          Footer
+                                       4.0   Footer
 ========================================================================================== */
 
 footer p {
